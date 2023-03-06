@@ -1,20 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeSceneComponent : MonoBehaviour
 {
     [Header("Scene to go")]
-    [Serialized]
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private int scene;
+    
+    public void ChangeScene()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+        SceneManager.LoadScene(scene);
     }
 }
