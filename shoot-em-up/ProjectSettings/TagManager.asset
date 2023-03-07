@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - PlayerBullet
+  - Character
+  - Enemy
+  - EnemyBullet
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Actors
     uniqueID: 137349721
+    locked: 0
+  - name: Bullets
+    uniqueID: 1408940869
     locked: 0
